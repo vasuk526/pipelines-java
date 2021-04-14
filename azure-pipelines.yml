@@ -22,7 +22,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - script:
-    echo This is source '$(Build.Repository.LocalPath)/target
+    echo This is source '$(Build.Repository.LocalPath)/target'
     echo This is target '$(Build.ArtifactStagingDirectory)'
 - task: CopyFiles@2
   inputs:
